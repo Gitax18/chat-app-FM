@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    *{
+      overflow-x: hidden;
+    }
+  </style>
+  
+  <title>Frontend Mentor | [chat app]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head> 
+<body class=" bg-[#f5f3f7] ">
+  <main style="font-family: rubik;" class="flex max-[810px]:flex-col">
+    <section class="container-left w-1/2 h-[98vh]  max-[811px]:w-[100vw] max-[810px]:h-[100vh] ">
+
+
+      <div class="design-left  w-[40vw] h-[90vh] bg-gradient-to-b from-[#e942ff] to-[#8838ff] -z-10 absolute rounded-b-full -left-20 max-[811px]:w-[70%] max-[811px]:h-[80vh] max-[811px]:-left-15">
+
+      </div>
+      <div class="mobile  w-[270px] shadow-2xl bg-[#f5f3f7]  border-white border-[10px] ml-80 relative top-24 text-xs rounded-3xl max-[811px]:mx-auto max-[811px]:top-5">
+
+        <div class="screen w-full rounded pb-2 h-full">
+  
+          <div class="chat-header relative">
+            <div class="bg-white w-1/2 h-1/5 rounded-b-3xl absolute left-1/4"></div>
+            <section class="flex items-center bg-gradient-to-r to-[#e942ff] from-[#8838ff] justify-between py-5 box-border w-full rounded-t-xl">
+              <div class="left-part flex items-center box-border">
+                <img src="images/back.png" alt="back" class="h-5 ml-2">
+                <img src="images/avatar.jpg" class="h-10 rounded-3xl border-2 border-white mx-2">
+      
+                <div class="avatar-info flex flex-col pr-5  box-border ">
+                  <strong class="text-white">Samuel Green</strong>
+                  <small class="text-[#d89eff]">Available to Walk</small>
+                </div>
+              </div>
+    
+              <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="6" r="2" transform="rotate(90 12 6)" fill="#fff"/>
+                    <circle cx="12" cy="12" r="2" transform="rotate(90 12 12)" fill="#fff"/>
+                    <path d="M12 20C10.8954 20 10 19.1046 10 18C10 16.8954 10.8954 16 12 16C13.1046 16 14 16.8954 14 18C14 19.1046 13.1046 20 12 20Z" fill="#fff"/>
+              </svg>
+            </section>
+          </div>
+  
+  
+  
+          <section class="chat-body flex flex-col text-[0.6rem]">
+            <div class="mess-left p-1 w-fit m-2 rounded-xl text-[#9241c8] bg-purple-100">
+            <p>That sounds great. I'd be <br> happy with that.</p></div>
+            <div class="mess-left  p-1 w-fit m-1 rounded-xl text-[#9241c8] bg-purple-100"><p>Could you send over some <br> pictures of your dog, please?</p></div>
+            <div class="dog-images flex justify-end">
+                <img src="images/dog-image-1.jpg" alt="dog" class="h-12 rounded-xl m-1">
+                <img src="images/dog-image-2.jpg" alt="dog" class="h-12 rounded-xl m-1">
+                <img src="images/dog-image-3.jpg" alt="dog" class="h-12 rounded-xl m-1">
+            </div>
+            <div class="mess-right self-end bg-white rounded-xl text-[#6e5d7e] w-fit p-1 m-1"><p>Here are a few pictures. She's <br> a happy girl!</p></div>
+            <div class="mess-right self-end bg-white rounded-xl text-[#6e5d7e] w-fit p-1 m-1"><p> Can you make it?</p></div>
+            <div class="mess-left  p-1 w-fit m-1 rounded-xl text-[#9241c8] bg-purple-100"><p>She looks so happy! The time <br> we discussed works. How <br> long shall I take her out for?</p></div>
+            
+            <div class="option-left flex justify-between w-fit  py-2 pl-0 pr-4 m-1 items-center bg-gradient-to-r from-[#e942ff] to-[#8838ff] rounded-2xl ">
+              <div class="part-left flex p-1 bg-transparent mr-6">
+                <input type="radio" name="walk-option" class="mx-2">
+                <p class="text-[0.6rem] text-[#fff]">30 minute walk</p>
+              </div>
+              <big><strong class="text-white">$29</strong></big>
+            </div>
+
+            <div class="option-left flex justify-between w-fit  py-1 pl-0 pr-4 m-1 items-center bg-gradient-to-r from-[#e942ff] to-[#8838ff] rounded-2xl ">
+              <div class="part-left  flex p-1 bg-transparent mr-6">
+                <input type="radio" name="walk-option" class="mx-2 ">
+                <p  class="text-[0.6rem] text-[#fff]">1 hour walk</p>
+              </div>
+              <big><strong class="text-white">$49</strong></big>
+            </div>
+
+          </section>
+
+          <section class="chat-footer flex  bg-white items-center justify-between px-2 py-1 mx-2 mt-1 rounded-3xl ">
+            <input type="text" placeholder="Type a message…" name="chat" id="chat-box" class="focus:outline-none">
+            <button><img src="images/send.png" class=" bg-[#3e2753] p-2 rounded-full "></button>
+          </section>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="container-right  w-1/2 h-[99vh] flex flex-col items-start justify-center max-[811px]:w-[100vw] max-[811px]:items-center max-[811px]:h-fit max-[811px]:my-28 max-[811px]:text-center">
+      <div class="text">
+        <h1 class="text-3xl font-medium text-[#3E2753] mb-5">Simple booking</h1>
+        <p class=" max-w-[400px] text-[#A39DAA] text-[14px] leading-6">Stay in touch with our dog walkers through the chat interface. This makes it easy to 
+          discuss arrangements and make bookings. Once the walk has been completed you can rate 
+          your walker and book again all through the chat.</p>
+      </div>
+      <div class="design  w-[40vw] h-[90vh] bg-violet-100 -z-10 absolute rounded-t-full -bottom-10  -right-20 max-[811px]:w-3/4 max-[811px]:-bottom-[65%]"></div>
+    </section>    
+  </main>
+
+ 
+  <div class="attribution mx-auto mb-5">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Gitax18">gitanshu</a>.
+  </div>
+</body>
+</html>
